@@ -6,7 +6,7 @@ import MyFirstComponent from './components/MyFirstComponent';
 function App() {
   return (
     <>
-    <div >
+    <div className='App' >
      <h1>hanene zribi</h1>
      {/* <Products/> */}
      <MyFirstComponent/>
