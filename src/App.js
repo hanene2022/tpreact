@@ -1,21 +1,30 @@
 
 import './App.css';
-import MyFirstComponent from './components/MyFirstComponent';
+import Header from './components/Header';
+import Post from './components/Post';
+import SideMenu from './components/SideMenu';
+// import MyFirstComponent from './components/MyFirstComponent';
 // import Products from './components/Product';
 
 function App() {
   return (
-    <>
+ 
     <div className='App' >
-     <h1>hanene zribi</h1>
-     {/* <Products/> */}
-     <MyFirstComponent/>
-     <MyFirstComponent/>
-     <MyFirstComponent/>
-     <MyFirstComponent/>
-     <MyFirstComponent/>
+      <Header/>
+     <div style={{display:"flex", justifyContent:"center"}}>
+      <div style={{display:"flex"}}>      
+            <div style={{width:"70%"}}>
+            <Post/>
+          <Post/>
+          <Post/>
+          <Post/>
+            </div>
+            <div style={{width:"30%"}} >   <SideMenu/></div>
+       </div>
+   
+       </div>
     </div>
-    </>
+  
   );
 }
 
